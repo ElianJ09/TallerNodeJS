@@ -1,7 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 
-dotenv.config();
+//dotenv.config();
 
 const app = express();
 
@@ -12,7 +12,7 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/:myname', (req, res, next) => {
-    res.send(`Hello world! My name is ${req.params.myname}}`)
+    res.send(`Hello world! My name is ${req.params.myname}`)
 });
 
 app.listen(port, () => {
